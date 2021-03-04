@@ -1,0 +1,13 @@
+.Partners {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2vh 0 0 0;
+
+  &__item-img {
+    margin: 10px;
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+}

@@ -1,0 +1,8 @@
+.Content {
+  width: 80%;
+  padding-top: 50px;
+
+  @media (max-width: $mobile) {
+    margin: auto 10%;
+  }
+}

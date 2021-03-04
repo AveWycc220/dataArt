@@ -1,0 +1,51 @@
+@mixin size {
+  padding: 5px;
+  width: 18vw;
+  height: 30px;
+}
+
+.Phone-form {
+  background-color: $white;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 23vw;
+  height: 9.375rem;
+
+  &--fixed {
+    position: fixed;
+    top: 55vh;
+    left: 75vw;
+  }
+
+  &__label {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &__input {
+    @include size();
+    &:focus {
+      outline-color: $gray;
+    }
+  }
+
+  &__button {
+    @include size();
+    cursor: pointer;
+    color: $white;
+    border-radius: 4px;
+    background-color: $primary;
+    border: none;
+
+    &:active, &:focus {
+      outline: none;
+    }
+  }
+
+  @media (max-width: $large-desktop) {
+    display: none;
+  }
+}

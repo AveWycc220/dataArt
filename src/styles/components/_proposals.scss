@@ -1,0 +1,58 @@
+.Proposals {
+  padding-top: 50px;
+
+  &__item {
+    height: 9.375rem;
+    margin-bottom: 20px;
+    color: $black;
+    background: $white;
+    padding: 20px;
+    display: flex;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item--right-sided {
+    flex-direction: row-reverse;
+  }
+
+  &__item-img {
+    height: 100%;
+    width: 150px;
+    margin: 0 15px;
+  }
+
+  &__item-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__item-text {
+    font-size: 14px;
+  }
+
+  @media (max-width: $small-desktop) {
+    &__item {
+      flex-direction: column;
+      height: 15.625rem;
+      align-items: center;
+    }
+
+    &__item-img {
+      width: 56%;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    &__item {
+      height: 20.625rem;
+    }
+
+    &__item-img {
+      width: 80%;
+    }
+  }
+}

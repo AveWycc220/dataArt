@@ -1,0 +1,9 @@
+.MainContainer {
+  background: $primary;
+  padding: 0 10% 50px;
+  display: flex;
+
+  @media (max-width: $mobile) {
+    padding: 0;
+  }
+}
