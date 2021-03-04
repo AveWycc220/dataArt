@@ -23,8 +23,6 @@
   }
 
   @media (max-width: $mobile) {
-    &__item {
-      height: 24.75rem;
-    }
+    display: none;
   }
 }

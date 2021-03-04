@@ -46,7 +46,7 @@
 }
 @media (max-width: 640px) {
   .MainContainer {
-    padding: 0;
+    padding: 0 0 10% 0;
   }
 }
 
@@ -131,8 +131,8 @@
   text-align: center;
 }
 @media (max-width: 640px) {
-  .Articles__item {
-    height: 24.75rem;
+  .Articles {
+    display: none;
   }
 }
 
