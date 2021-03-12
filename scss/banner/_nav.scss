@@ -1,0 +1,28 @@
+.nav {
+  width: 493px;
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: $banner-text-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: $small-desktop) {
+  .nav {
+    display: none;
+  }
+}

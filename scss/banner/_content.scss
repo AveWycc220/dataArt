@@ -1,0 +1,32 @@
+.content {
+  z-index: 1;
+  padding-top: 165px;
+  width: 567px;
+  height: 399px;
+  align-self: flex-start;
+
+  &__title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 1.25;
+    color: $banner-text-color;
+    width: 567px;
+    height: 198px;
+  }
+
+  &__text {
+    margin-top: 40px;
+    width: 566px;
+    height: 60px;
+    color: $banner_paragraph_color;
+    font-size: 17px;
+    line-height: 1.75;
+  }
+}
+
+@media (max-width: $small-desktop) {
+  .content {
+    align-self: center;
+  }
+}

@@ -1,0 +1,22 @@
+.video {
+  padding-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 168px;
+  height: 61px;
+  align-items: center;
+
+  &__text {
+    color: $banner-text-color;
+  }
+
+  &__play {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: $small-desktop) {
+  .video {
+    width: 175px;
+  }
+}

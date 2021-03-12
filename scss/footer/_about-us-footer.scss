@@ -1,0 +1,22 @@
+.about-us-footer {
+  width: 66px;
+  height: 268px;
+
+  &__title {
+    @include footer_title();
+    padding-bottom: 30px;
+  }
+
+  &__link {
+    color: $banner-text-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__container {
+    @include footer_list()
+  }
+}

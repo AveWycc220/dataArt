@@ -1,0 +1,51 @@
+@mixin btn($width, $height, $padding, $withBorder: false, $fontMedium: false) {
+  width: $width;
+  height: $height;
+  font-size: 0.95rem;
+  @if $withBorder {
+    background-color: $banner-text-color;
+    color: $btn-bg-color;
+    border: 2px solid $btn-bg-color;
+  } @else {
+    background-color: $btn-bg-color;
+    color: $banner-text-color;
+    border: 0;
+  }
+  @if $fontMedium {
+    font-weight: 500;
+  }
+  border-radius: 28px;
+  padding: $padding;
+
+  &:active, {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin text($isFooter: false) {
+  font-size: 16px;
+  @if $isFooter {
+    color: $footer-text-color
+  } @else {
+    color: $card-text-color;
+  }
+  line-height: 30px;
+}
+
+@mixin footer_title() {
+  color: $banner-text-color;
+  font-size: 22px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+
+@mixin footer_list() {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

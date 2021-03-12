@@ -1,0 +1,16 @@
+.card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  background-color: $bg-icon-color;
+  border: 8px solid $card-border-color;
+  box-shadow: 0 29px 57px -14px rgba(51, 59, 64, 0.2);
+
+  &__img {
+    width: 70px;
+    height: 70px;
+  }
+}

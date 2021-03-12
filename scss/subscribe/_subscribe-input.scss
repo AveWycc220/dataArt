@@ -1,0 +1,20 @@
+.subscribe-input {
+  width: 418px;
+  height: 76px;
+  display: flex;
+
+  &__form {
+    padding: 28px;
+    width: 337px;
+    border: none;
+
+    &:active, &:focus {
+      outline: 2px solid $about-us-title-color;
+    }
+  }
+
+  &__img {
+    width: 81px;
+    height: 76px;
+  }
+}

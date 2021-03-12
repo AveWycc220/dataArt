@@ -1,0 +1,43 @@
+.about-us-content {
+  width: 569px;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title {
+    font-size: 20px;
+    width: 180px;
+    height: 30px;
+    color: $about-us-title-color;
+  }
+
+  &__subtitle {
+    width: 510px;
+    height: 162px;
+    font-family: 'Lato', sans-serif;
+    color: $card-title-color;
+    font-size: 46px;
+    font-weight: bold;
+  }
+
+  &__text {
+    width: 569px;
+    height: 90px;
+    @include text()
+  }
+
+  &__btn {
+    @include btn(182px, 52px, 5px 30px);
+
+    &_shadow {
+      box-shadow: 0px 29px 57px -14px rgba(52, 178, 255, 0.2);
+    }
+  }
+}
+
+@media (max-width: $small-desktop) {
+  .about-us-content {
+    padding-top: 30px;
+  }
+}

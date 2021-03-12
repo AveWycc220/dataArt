@@ -1,0 +1,40 @@
+.social {
+  color: $banner-text-color;
+  width: 342px;
+  height: 232px;
+
+  &__text {
+    margin-top: 26px;
+    width: 342px;
+    height: 90px;
+    @include text(true)
+  }
+}
+
+.social-img-list {
+  width: 164px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__link {
+    overflow: hidden;
+    padding-top: 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: $small-desktop) {
+  .social-img-list {
+    &__link {
+      padding-top: 15px;
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.subscribe-bg {
+  z-index: 1;
+  width: 1170px;
+  height: 319px;
+  box-shadow: 0 0 57px -14px rgba(51, 59, 64, 0.2);
+  border-radius: 10px;
+  background-color: $card-border-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_indent {
+    margin-top: 235px;
+  }
+}
+
+@media (min-width: $large-desktop) {
+  .subscribe-bg {
+    width: 1530px;
+  }
+}
+
+@media (max-width: $small-desktop) {
+  .subscribe-bg {
+    width: 830px;
+  }
+}

@@ -1,0 +1,30 @@
+.contact-us {
+  width: 326px;
+  height: 160px;
+
+  &__title {
+    @include footer_title();
+    padding-bottom: 30px;
+  }
+
+  &__link {
+    padding-left: 5px;
+    color: $banner-text-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__container {
+    color: $banner-text-color;
+    @include footer_list()
+  }
+}
+
+@media (max-width: $small-desktop) {
+  .contact-us {
+    padding-top: 30px;
+  }
+}

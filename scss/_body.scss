@@ -1,0 +1,8 @@
+body {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: $main-font;
+}

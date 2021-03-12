@@ -1,0 +1,16 @@
+.logo {
+  font-weight: 500;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 115.53px;
+  height: 52px;
+}
+
+@media (max-width: $small-desktop) {
+  .logo {
+    width: 120px;
+  }
+}

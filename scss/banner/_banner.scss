@@ -1,0 +1,13 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1171px;
+  height: 996px;
+}
+
+@media (min-width: $large-desktop) {
+  .banner {
+    width: 1500px;
+  }
+}
