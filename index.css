@@ -1,0 +1,64 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.btn-container__button {
+    margin: 10px 0;
+    background: #2431e2;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 15em;
+    height: 2.5em;
+}
+
+.btn-container__button:hover {
+    background: #434bff;
+    cursor: pointer;
+}
+
+.btn-container__button:active, .btn-container__button:focus {
+    outline: none;
+    background: #b2c4ff;
+}
+
+.loading {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.div-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid #3b3b3b;
+    border-radius: 10px;
+}
+
+.table__header {
+    font-size: 20px;
+}
+
+.table__explanation {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+td {
+    width: 150px;
+}
