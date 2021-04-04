@@ -1,82 +1,64 @@
-class Employee {
-  constructor(name, surname, age) {
-    this._name = name
-    this._surname = surname
-    this._age = age
-  }
+const CONFIG = {
+  URL: `https://jsonplaceholder.typicode.com/comments`,
+  ROOT: document.querySelector('.App') || document.body
+}
 
-  getObjectInfo() {
-    return {name: this._name, surname: this._surname, age: this._age}
-  }
-
-  getStringInfo() {
-    return `Name: ${this._name} | Surname: ${this._surname} | Age: ${this._age}`
-  }
-
-  doWork() {
-    return 'I dont know what i need to do!'
+const getData = async () => {
+  try {
+    let res = await fetch(CONFIG.URL)
+    return res.status === 200 ? await res.json() : false
+  } catch (e) {
+    console.log(e + ` ServerError. Please try again.`)
   }
 }
 
-class Developer extends Employee {
-  constructor(name, surname, age) {
-    super(name, surname, age)
-  }
-
-  doWork() {
-    return 'I will do some features'
-  }
+const initElements = (data) => {
+  CONFIG.ROOT.appendChild(createInput('author-email', data))
+  paintComments(data)
 }
 
-class Tester extends Employee {
-  constructor(name, surname, age) {
-    super(name, surname, age)
-  }
-
-  doWork() {
-    return 'I will try to destroy this application'
-  }
-}
-
-class Project {
-  constructor() {
-    this._developersList = []
-    this._testersList = []
-  }
-
-  addDeveloper(developer) {
-    if (developer instanceof Developer) {
-      this._developersList.push(developer)
-    } else {
-      throw new Error(`TypeError: addDeveloper except Developer, but get ${developer.constructor.name}`)
+const createInput = (className, data) => {
+  const inputFolder = document.createElement('input')
+  inputFolder.type = 'text'
+  inputFolder.classList.add(className)
+  inputFolder.addEventListener('input', e => {
+    let worker = new Worker('./worker.js')
+    worker.postMessage({arr: data, value: e.target.value})
+    worker.onmessage = (e) => {
+      paintComments(e.data)
     }
-  }
-
-  addTester(tester) {
-    if (tester instanceof Tester) {
-      this._testersList.push(tester)
-    } else {
-      throw new Error(`TypeError: addTester except Tester, but get ${tester.constructor.name}`)
-    }
-  }
-
-  getTeam() {
-    const getInfoOfEmployee = elem => elem.getStringInfo()
-    return {
-      developersList: this._developersList.map(getInfoOfEmployee),
-      testersList: this._testersList.map(getInfoOfEmployee)
-    }
-  }
+  })
+  return inputFolder
 }
 
-const project = new Project()
+const paintComments = (data) => {
+  let mainDiv = createMainDiv()
+  data.forEach(elem => {
+    const divElem = document.createElement('div')
+    divElem.classList.add('comment')
+    divElem.id = elem.id
+    divElem.innerHTML = `
+    <hr/>
+    <p id="name">Name = ${elem.name || ' '}</p>
+    <p id="email">Email = ${elem.email || ' '}</p>
+    <p id="body">Comment = ${elem.body || ' '}</p>
+    `
+    mainDiv.appendChild(divElem)
+  })
+  CONFIG.ROOT.appendChild(mainDiv)
+}
 
-const developerBob = new Developer('Bob', 'Smith', 20)
-const developerJohn = new Developer('John', 'Doe', 22)
-const testerAlex = new Tester('Alex', 'Green', 21)
+const createMainDiv = () => {
+  let div = document.querySelector('.comments-list')
+  if (div) {
+    while (div.firstChild) {
+      div.removeChild(div.firstChild);
+    }
+  } else {
+    div = document.createElement('div')
+    div.classList.add('comments-list')
+  }
+  return div
+}
 
-project.addDeveloper(developerBob)
-project.addDeveloper(developerJohn)
-project.addTester(testerAlex)
-
-console.log(project.getTeam())
+getData().then((data) => initElements(data))
