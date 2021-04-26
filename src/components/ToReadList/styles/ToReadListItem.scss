@@ -1,0 +1,25 @@
+.to-read-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+  flex: 0 0 19%;
+  &__title {
+    margin: 0 0 0 10px;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  &__subtitle {
+    margin: 10px 0 0 10px;
+  }
+  &__author {
+    margin: 10px 0 0 10px;
+  }
+  &__button {
+    display: flex;
+    justify-content: space-around;
+    & > button {
+      flex-basis: 40%;
+    }
+  }
+}

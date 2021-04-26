@@ -1,0 +1,17 @@
+export enum ActionTypesEnum {
+    SEARCH = 'SEARCH',
+    SET_LOADING = 'SET_LOADING',
+    NEW_PAGE = 'NEW_PAGE',
+    SET_VALUE = 'SET_VALUE',
+    SET_NEW_PAGE_LOADING = 'SET_NEW_PAGE_LOADING',
+    ERROR = 'ERROR',
+    SET_FOUND = 'SET_FOUND',
+    SET_SHOWN = 'SET_SHOWN',
+    SET_PAGE = 'SET_PAGE',
+    SET_SELECTED = 'SET_SELECTED',
+    SET_TO_READ_BOOK_COUNT = 'SET_TO_READ_BOOK_COUNT',
+    SET_READ_BOOK_COUNT = 'SET_READ_BOOK_COUNT',
+    SET_TO_READ_LIST = 'SET_TO_READ_LIST',
+}
+
+export type ActionTypes = keyof typeof ActionTypesEnum

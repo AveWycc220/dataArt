@@ -1,0 +1,26 @@
+.search-result {
+  &__subtitle {
+    margin: 5px 0 0 10px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 5px 0 0 10px;
+  }
+  &__item {
+    animation-name: Appearance;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.3s;
+    border-bottom: 1px solid black;
+    flex: 0 0 12%;
+    &:hover {
+      cursor: pointer;
+      background-color: #cfcfcf;
+    }
+  }
+}
+
+@keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}

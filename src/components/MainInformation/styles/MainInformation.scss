@@ -1,0 +1,25 @@
+.main-information {
+  display: flex;
+  font-size: 1.5rem;
+  flex-direction: column;
+  flex: 0 0 40%;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  &__title {
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+  &__subtitle {
+    margin-top: 5px;
+    font-size: 1.25em;
+  }
+  &__languages {
+    margin-top: 40px;
+  }
+  &__has-fullText, &__first-publish-year, &__publish-year {
+    margin-top: 5px;
+  }
+  &__button {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,16 @@
+.to-read-list-header {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 10%;
+  background-color: #3F3F3F;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+}

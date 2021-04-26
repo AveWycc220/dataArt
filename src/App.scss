@@ -1,0 +1,17 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #FFFFFF;
+  color: #202020;
+  animation-name: Appearance;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.4s;
+}
+
+@keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}

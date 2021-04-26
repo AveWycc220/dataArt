@@ -1,0 +1,31 @@
+.search-result {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 80%;
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #919191;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #5D5C61;
+  }
+
+  &_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.new-page-loading {
+  padding: 5px 0 0 10px;
+}

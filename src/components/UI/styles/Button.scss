@@ -1,0 +1,31 @@
+.button-ui {
+  flex: 0 1 20%;
+  font-family: 'Noto Sans JP', sans-serif;
+  border-radius: 5px;
+  padding: 4px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: 0.1s linear;
+
+  &_yellow {
+    border: 2px solid #FFDF6C;
+    color: #FFDF6C;
+    background-color: #3F3F3F;
+    &:hover {
+      border: 2px solid white;
+      color: white;
+    }
+  }
+
+  &_black {
+    padding: 6px;
+    border: 2px solid #3F3F3F;
+    color: #3F3F3F;
+    background-color: #FFFFFF;
+    &:hover {
+      border: 2px solid #000000;
+      background-color: #000000;
+      color: #FFFFFF;
+    }
+  }
+}

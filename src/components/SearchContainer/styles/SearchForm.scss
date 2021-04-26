@@ -1,0 +1,13 @@
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 10%;
+  background-color: #3F3F3F;
+  color: white;
+
+  & > input {
+    flex: 0 1 40%;
+  }
+}
