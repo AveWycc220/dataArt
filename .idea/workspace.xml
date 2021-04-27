@@ -20,25 +20,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb4f0638-0dc2-4ecc-870d-1872ec8868fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/Api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainInformation/MainInformation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainInformation/MainInformation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainInformation/styles/MainInformation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainInformation/styles/MainInformation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/SearchContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/SearchForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/SearchResultItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/SearchResultItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/styles/SearchContainer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/styles/SearchContainer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/styles/SearchFooter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/styles/SearchFooter.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/styles/SearchForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/styles/SearchForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/styles/SearchResult.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/styles/SearchResult.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchContainer/styles/SearchResultItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer/styles/SearchResultItem.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToReadList/ToReadList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToReadList/ToReadList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToReadList/ToReadListHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToReadList/ToReadListHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToReadList/ToReadListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToReadList/ToReadListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToReadList/styles/ToReadList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToReadList/styles/ToReadList.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToReadList/styles/ToReadListHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToReadList/styles/ToReadListHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToReadList/styles/ToReadListItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToReadList/styles/ToReadListItem.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/styles/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/styles/Button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/styles/Error.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/styles/Error.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/styles/Input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/styles/Input.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/styles/Loader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/styles/Loader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/localStorage/LocalStorageWorker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/localStorage/LocalStorageWorker.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actionTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actionTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/initialState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/initialState.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/types.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,15 +91,25 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projects\data-art\src" />
       <recent name="E:\Projects\data-art\src\components\ToReadList" />
       <recent name="E:\Projects\data-art\src\components\MainInformation" />
       <recent name="E:\Projects\data-art\src\components\SearchContainer" />
       <recent name="E:\Projects\data-art\src\api" />
-      <recent name="E:\Projects\data-art\src\components\SearchContainer\styles" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="npm.build">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -114,6 +134,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
@@ -140,7 +161,9 @@
       <workItem from="1619294698286" duration="12254000" />
       <workItem from="1619346846270" duration="35649000" />
       <workItem from="1619391205020" duration="4553000" />
-      <workItem from="1619396750227" duration="121000" />
+      <workItem from="1619396750227" duration="485000" />
+      <workItem from="1619420547105" duration="165000" />
+      <workItem from="1619464207564" duration="20970000" />
     </task>
     <servers />
   </component>
@@ -171,38 +194,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="718" y="310" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1619285148410" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619271805637">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619479823994">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619271805637" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1619161690915">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619479823994" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1619420732270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1619161690915" />
-    <state width="938" height="230" key="GridCell.Tab.0.bottom" timestamp="1619395882298">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1619420732270" />
+    <state width="938" height="230" key="GridCell.Tab.0.bottom" timestamp="1619488368602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="230" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1619395882298" />
-    <state width="938" height="230" key="GridCell.Tab.0.center" timestamp="1619395882298">
+    <state width="938" height="230" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1619488368602" />
+    <state width="938" height="230" key="GridCell.Tab.0.center" timestamp="1619488368602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="230" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1619395882298" />
-    <state width="938" height="230" key="GridCell.Tab.0.left" timestamp="1619395882298">
+    <state width="938" height="230" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1619488368602" />
+    <state width="938" height="230" key="GridCell.Tab.0.left" timestamp="1619488368602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="230" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1619395882298" />
-    <state width="938" height="230" key="GridCell.Tab.0.right" timestamp="1619395882298">
+    <state width="938" height="230" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1619488368602" />
+    <state width="938" height="230" key="GridCell.Tab.0.right" timestamp="1619488368602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="230" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1619395882298" />
+    <state width="938" height="230" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1619488368602" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1619265031359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1619265031359" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1619364010945">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1619484099987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1619364010945" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1619484099987" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1619372769735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

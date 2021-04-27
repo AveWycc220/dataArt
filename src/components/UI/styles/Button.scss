@@ -1,3 +1,5 @@
+@import "src/styleElements/vars";
+
 .button-ui {
   flex: 0 1 20%;
   font-family: 'Noto Sans JP', sans-serif;
@@ -8,24 +10,24 @@
   transition: 0.1s linear;
 
   &_yellow {
-    border: 2px solid #FFDF6C;
-    color: #FFDF6C;
-    background-color: #3F3F3F;
+    border: 2px solid $form-yellow;
+    color: $form-yellow;
+    background-color: $block-background;
     &:hover {
-      border: 2px solid white;
-      color: white;
+      border: 2px solid $main-background;
+      color: $main-font;
     }
   }
 
   &_black {
     padding: 6px;
-    border: 2px solid #3F3F3F;
-    color: #3F3F3F;
-    background-color: #FFFFFF;
+    border: 2px solid $block-background;
+    color: $block-background;
+    background-color: $main-background;
     &:hover {
-      border: 2px solid #000000;
-      background-color: #000000;
-      color: #FFFFFF;
+      border: 2px solid $button-black-hover;
+      background-color: $button-black-hover;
+      color: $main-background;
     }
   }
 }

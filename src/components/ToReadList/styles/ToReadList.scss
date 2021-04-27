@@ -1,27 +1,23 @@
+@import "src/styleElements/vars";
+@import "src/styleElements/mixins";
+
 .to-read-list {
   display: flex;
   flex: 0 0 30%;
   flex-direction: column;
   &-container {
+    max-height: 90vh;
     display: flex;
     flex-direction: column;
     flex-basis: 90%;
     overflow-y: scroll;
-    &::-webkit-scrollbar {
-      width: 7px;
-    }
+    @include cursor();
+  }
+}
 
-    &::-webkit-scrollbar-track {
-      background: none;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: #919191;
-    }
-
-    &::-webkit-scrollbar-thumb:hover {
-      background: #5D5C61;
-    }
-
+@media (max-width: $small-screen-breakpoint) {
+  .to-read-list {
+    flex: 0 0 100%;
+    height: 100vh;
   }
 }

@@ -6,6 +6,7 @@ interface ILocalStorageWorker {
     getItems: () => Array<ResultObject>
     addItem: (obj: ResultObject) => boolean
     removeItem: (key: string) => void
+    changeStatus: (key: string) => void
 }
 
 export default class LocalStorageWorker implements ILocalStorageWorker {
@@ -30,15 +31,32 @@ export default class LocalStorageWorker implements ILocalStorageWorker {
     }
 
     addItem(obj: ResultObject): boolean {
-        console.log(obj)
         const items = JSON.parse(this.getItemsFromStorage()!)
         if (!('status' in obj)) {
             return false
         }
-        items.push(obj)
-        if (this.store) this.updateStore(items)
+        const check = items.filter((elem: ResultObject) => elem.keyItem === obj.keyItem)
+        if (check.length === 0) {
+            items.push(obj)
+            if (this.store) this.updateStore(items)
+            this.localStorage.setItem('items', JSON.stringify(items))
+            return true
+        }
+        return false
+    }
+
+    changeStatus(key: string): void {
+        let items = JSON.parse(this.getItemsFromStorage()!)
+        items = items.map((elem: ResultObject) => {
+            if (elem.keyItem === key) {
+                const newElem = Object.assign(elem)
+                newElem.status = true
+                return newElem
+            }
+            return elem
+        })
+        this.updateStore(items)
         this.localStorage.setItem('items', JSON.stringify(items))
-        return true
     }
 
     removeItem(key: string): void {

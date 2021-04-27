@@ -11,9 +11,10 @@ interface IToReadListItem {
 const ToReadListItem: React.FC<ResultObject & IToReadListItem> = (props: ResultObject & IToReadListItem): JSX.Element => {
     const { title, subtitle, language, keyItem, author_name, status } = props
 
-    const changeStatusEvent = (keyItemNewStatus: string): void => localStorageWorker.removeItem(keyItemNewStatus)
+    const removeItemEvent = (keyItemRemove: string): void => localStorageWorker.removeItem(keyItemRemove)
+    const changeStatusEvent = (keyItemNewStatus: string): void => localStorageWorker.changeStatus(keyItemNewStatus)
 
-    const item = (): JSX.Element => (
+    const item: JSX.Element = (
         <>
             <div className="to-read-list-item__title">{title} {language ? `(${language.join(', ')})` : <></>}</div>
             <div className="to-read-list-item__subtitle">{subtitle}</div>
@@ -21,30 +22,37 @@ const ToReadListItem: React.FC<ResultObject & IToReadListItem> = (props: ResultO
         </>
     )
 
-    const readBookItem = (): JSX.Element => (
-        <div className="to-read-list-item to-read-list-item_read" key={keyItem}>
-            {item()}
+    const buttonContainer: JSX.Element = (
+        <div className="to-read-list-item__button">
+            <Button
+                color="black"
+                onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>): void => changeStatusEvent(keyItem)}
+            >
+                Make as read
+            </Button>
+            <Button
+                color="black"
+                onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>): void => removeItemEvent(keyItem)}
+            >Remove from list</Button>
         </div>
     )
 
-    const toReadBookItem = (): JSX.Element => (
+    const toReadBookItem: JSX.Element = (
         <div className="to-read-list-item" key={keyItem}>
             <div className="to-read-list-item__info">
-                {item()}
+                {item}
             </div>
-            <div className="to-read-list-item__button">
-                <Button color="black">
-                    Make as read
-                </Button>
-                <Button
-                    color="black"
-                    onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>): void => changeStatusEvent(keyItem)}
-                >Remove from list</Button>
-            </div>
+            {status ? <></> : buttonContainer}
         </div>
     )
 
-    return status ? readBookItem() : toReadBookItem()
+    const readBookItem: JSX.Element = (
+        <div className="to-read-list-item to-read-list-item_read" key={keyItem}>
+            {item}
+        </div>
+    )
+
+    return status ? readBookItem : toReadBookItem
 }
 
 export default ToReadListItem

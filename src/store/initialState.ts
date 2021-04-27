@@ -14,6 +14,9 @@ const initialState: State = {
     toReadBookCount: 0,
     readBookCount: 0,
     toReadList: [] as Array<ResultObject>,
+    search: false,
+    mainInformation: false,
+    smallDeviceBreakpoint: 1100,
 }
 
 export default initialState

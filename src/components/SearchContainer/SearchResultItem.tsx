@@ -7,17 +7,25 @@ import { ActionTypesEnum } from '../../store/actionTypes'
 
 interface ISearchResultItem {
     setSelected: (value: ResultObject) => void
+    setMainInformation: (value: boolean) => void
+    setSearch: (value: boolean) => void
     searchResult: Array<ResultObject>
     keyItem: string
 }
 
 const SearchResultItem: React.FC<ResultObject & ISearchResultItem> = (props: ResultObject & ISearchResultItem): JSX.Element => {
-    const { title, subtitle, language, keyItem, searchResult, setSelected } = props
+    const { title, subtitle, language, keyItem, searchResult, setSelected, setMainInformation, setSearch } = props
 
     const selectEvent = () => {
         const foundElem = searchResult.find((elem: ResultObject) => elem.keyItem === keyItem)
         foundElem!.keyItem = foundElem!.keyItem
-        foundElem ? setSelected(foundElem) : setSelected({} as ResultObject)
+        if (foundElem) {
+            setSelected(foundElem)
+            setMainInformation(true)
+            setSearch(false)
+        } else {
+            setSelected({} as ResultObject)
+        }
     }
 
     return (
@@ -32,6 +40,8 @@ const mapStateToProps = (state: State) => ({ searchResult: state.searchResult })
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({
     setSelected: (value: ResultObject) => dispatch({ type: ActionTypesEnum.SET_SELECTED, value }),
+    setMainInformation: (value: boolean) => dispatch({ type: ActionTypesEnum.SET_MAIN_INFORMATION, value }),
+    setSearch: (value: boolean) => dispatch({ type: ActionTypesEnum.SET_SEARCH, value }),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchResultItem)

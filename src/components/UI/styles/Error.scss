@@ -1,5 +1,7 @@
+@import "src/styleElements/vars";
+
 .error-ui {
-  color: red;
+  color: $error;
   font-weight: 700;
   font-size: 1.25rem;
 }

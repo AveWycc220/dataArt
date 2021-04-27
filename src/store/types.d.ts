@@ -15,6 +15,9 @@ export type State = {
     toReadBookCount: number
     readBookCount: number
     toReadList: Array<ResultObject>
+    search: boolean,
+    mainInformation: boolean,
+    smallDeviceBreakpoint: number,
 }
 
 const ActionFactory = <T>(type: ActionTypes) => class implements Action {
@@ -35,6 +38,8 @@ export const SetSelectedAction = ActionFactory<ResultObject>(ActionTypesObj.SET_
 export const SetToReadBooksCount = ActionFactory<number>(ActionTypesObj.SET_TO_READ_BOOK_COUNT)
 export const SetReadBooksCount = ActionFactory<number>(ActionTypesObj.SET_READ_BOOK_COUNT)
 export const SetToReadList = ActionFactory<Array<ResultObject>>(ActionTypesObj.SET_TO_READ_LIST)
+export const SetSearch = ActionFactory<boolean>(ActionTypesObj.SET_TO_READ_LIST)
+export const SetMainInformation = ActionFactory<boolean>(ActionTypesObj.SET_TO_READ_LIST)
 
 export type ResultObject = {
     keyItem: string
@@ -60,3 +65,5 @@ export type Actions = SearchAction
     | SetSelectedAction
     | SetToReadBookCount
     | SetReadBooksCount
+    | SetSearch
+    | SetMainInformation

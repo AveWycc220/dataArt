@@ -1,0 +1,20 @@
+/*
+  Mixins
+*/
+@mixin cursor {
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #919191;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #5D5C61;
+  }
+}

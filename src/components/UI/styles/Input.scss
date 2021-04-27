@@ -1,24 +1,26 @@
+@import "src/styleElements/vars";
+
 .input-ui {
-  border: 2px solid #FFDF6C;
+  border: 2px solid $form-yellow;
   border-radius: 5px;
   outline: 0;
   outline-offset: 0;
   padding: 4px 4px 4px 8px;
-  background-color: #3F3F3F;
-  color: #FFDF6C;
+  background-color: $block-background;
+  color: $form-yellow;
   transition: 0.1s linear;
 
   &:-webkit-autofill {
     transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: #FFDF6C;
+    -webkit-text-fill-color: $form-yellow;
     &:focus, &:active, &:hover {
       transition: background-color 5000s ease-in-out 0s;
-      -webkit-text-fill-color: white;
+      -webkit-text-fill-color: $main-font;
     }
   }
   &:focus, &:active, &:hover {
-    border: 2px solid white;
-    color: white;
+    border: 2px solid $main-background;
+    color: $main-font;
   }
   &::placeholder {
     color: inherit;

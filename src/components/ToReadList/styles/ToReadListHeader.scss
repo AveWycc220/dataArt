@@ -1,9 +1,11 @@
+@import "src/styleElements/vars";
+
 .to-read-list-header {
   display: flex;
   flex-direction: column;
   flex-basis: 10%;
-  background-color: #3F3F3F;
-  color: white;
+  background-color: $block-background;
+  color: $main-font;
   justify-content: space-around;
   align-items: center;
 
@@ -12,5 +14,27 @@
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+  }
+}
+
+@media (max-width: $small-screen-breakpoint) {
+  .to-read-list-header {
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &__info {
+      height: 100%;
+      flex-basis: 40%;
+    }
+    &__title {
+      padding-top: 3%;
+      flex-basis: 40%;
+    }
+    &__btn-search {
+      flex-basis: 20%;
+      margin: 10px;
+      align-self: flex-end;
+    }
   }
 }

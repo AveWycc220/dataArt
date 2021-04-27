@@ -12,6 +12,8 @@ export enum ActionTypesEnum {
     SET_TO_READ_BOOK_COUNT = 'SET_TO_READ_BOOK_COUNT',
     SET_READ_BOOK_COUNT = 'SET_READ_BOOK_COUNT',
     SET_TO_READ_LIST = 'SET_TO_READ_LIST',
+    SET_SEARCH = 'SET_SEARCH',
+    SET_MAIN_INFORMATION = 'SET_MAIN_INFORMATION',
 }
 
 export type ActionTypes = keyof typeof ActionTypesEnum

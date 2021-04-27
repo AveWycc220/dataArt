@@ -17,6 +17,8 @@ const reducer = (state: State = initialState, action: Actions): State => {
         case ActionTypesEnum.SET_TO_READ_BOOK_COUNT: return { ...state, toReadBookCount: action.value }
         case ActionTypesEnum.SET_READ_BOOK_COUNT: return { ...state, readBookCount: action.value }
         case ActionTypesEnum.SET_TO_READ_LIST: return { ...state, toReadList: action.value }
+        case ActionTypesEnum.SET_SEARCH: return { ...state, search: action.value }
+        case ActionTypesEnum.SET_MAIN_INFORMATION: return { ...state, mainInformation: action.value }
         default: return state
     }
 }

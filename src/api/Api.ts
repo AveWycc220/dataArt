@@ -41,11 +41,9 @@ export default class API implements IApiOpenLibraryWorker {
             }
             const res = await response.json()
             res.docs = removeKey(res.docs)
-            console.log(res)
             this.dispatchNewItems(res, value, page)
             return res.docs
         } catch (e) {
-            console.log(e)
             if (e.name !== 'AbortError') {
                 this.dispatchError(e)
             }
